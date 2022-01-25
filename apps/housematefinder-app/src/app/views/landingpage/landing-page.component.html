@@ -1,0 +1,129 @@
+<article>
+  <div class="hero">
+
+    <h3>Find a <span>room</span> with an ideal <span>house <br> mate</span> in your preferred <span>location</span></h3>
+
+    <form class="flex gap-2 flex-wrap p-4 text-black">
+      <label class="w-full flex relative">
+        <i-feather class="absolute top-2 !h-3 !w-3 left-2 top-3 !stroke-black/40" name="map-pin"></i-feather>
+        <input class="w-full p-2 pl-6" placeholder="Enter Street e.g Ajah">
+      </label>
+      <div class="w-full flex gap-2">
+        <label class="w-1/2">
+          <select class="block w-full p-2">
+            <option>State</option>
+          </select>
+        </label>
+        <label class="w-1/2">
+          <select class="block w-full p-2">
+            <option>LGA</option>
+          </select>
+        </label>
+      </div>
+      <button class="w-full">SEARCH</button>
+    </form>
+  </div>
+
+  <div class="popular-cities-section">
+    <h3>Find Housemates within popular cities</h3>
+    <div class="popular-cities">
+      <div>
+        <img src="assets/images/city.png" alt="">
+        <h4>Akoka, Yaba</h4>
+        <button>VIEW LISTINGS</button>
+      </div>
+      <div>
+        <img src="assets/images/city.png" alt="">
+        <h4>Akoka, Yaba</h4>
+        <button>VIEW LISTINGS</button>
+      </div>
+      <div>
+        <img src="assets/images/city.png" alt="">
+        <h4>Akoka, Yaba</h4>
+        <button>VIEW LISTINGS</button>
+      </div>
+      <div>
+        <img src="assets/images/city.png" alt="">
+        <h4>Akoka, Yaba</h4>
+        <button>VIEW LISTINGS</button>
+      </div>
+      <div>
+        <img src="assets/images/city.png" alt="">
+        <h4>Akoka, Yaba</h4>
+        <button>VIEW LISTINGS</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <h3>
+      Over 2000+ students trust Roommatesfinder
+    </h3>
+
+    <div class="text-xs">
+      Roommatesfinder is the largest online roommate community in Africa, connecting students, professionals,
+      and agents with portfolios of rooms, flats, self-contains for rent or other shared rentals.
+    </div>
+
+    <div class="flex mt-10 justify-center gap-4">
+      <button class="text-xs py-1 px-4 border-2 border-primary-blue text-primary-blue">POST A ROOM</button>
+      <button class="text-xs py-1 px-4 border-2 border-primary-green text-primary-green">FIND A ROOM MATE</button>
+    </div>
+  </div>
+
+  <div class="testimonials -skew-y-3">
+    <div class="skew-y-3">
+      <fa-icon [icon]="quote"></fa-icon>
+      <h3>Customer <span>Stories</span></h3>
+
+      <div class="testimonial-cards">
+        <div class="story-card">
+          <div class="profile-img">
+            <img src="assets/images/profile.png" alt="">
+          </div>
+          <h4>Mary Jane</h4>
+          <div class="occupation">Student</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Alias distinctio dolorum eveniet fugiat illo, mollitia quia ullam vero. Inventore, nobis!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="app-download">
+    <h3>RoommatesFinder</h3>
+
+    <div class="info-text">Download our app for easier access and better expirience</div>
+
+    <div class="button-section">
+      <button>
+        <fa-icon [icon]="apple"></fa-icon>
+        <div>
+          <span>Download on the</span>
+          <span class="-mt-1">AppStore</span>
+        </div>
+      </button>
+
+      <button>
+        <fa-icon [icon]="googlePlay"></fa-icon>
+        <div>
+          <span>GET IT ON</span>
+          <span class="-mt-1">Google Play</span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="subscription">
+    <h3>Sign up for our newsletter</h3>
+    <div>Don't miss our new offers and keep up to date.</div>
+
+    <form>
+      <label>
+        <fa-icon [icon]="envelope"></fa-icon>
+        <input placeholder="Your email address...">
+      </label>
+      <button>SIGN ME UP</button>
+    </form>
+  </div>
+</article>

@@ -1,12 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import {AppRoutingModule} from "./app.router.module";
+import {SharedModule} from "./shared/shared.module";
+import {NavbarComponent} from "./components/navbar/navbar.component";
+import {FooterComponent} from "./components/footer/footer.component";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent, NavbarComponent, FooterComponent],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    SharedModule,
+    FontAwesomeModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

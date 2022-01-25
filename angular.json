@@ -1,4 +1,7 @@
 {
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "projects": {
     "housematefinder-app": {
@@ -21,7 +24,10 @@
               "apps/housematefinder-app/src/favicon.ico",
               "apps/housematefinder-app/src/assets"
             ],
-            "styles": ["apps/housematefinder-app/src/styles.scss"],
+            "styles": [
+              "apps/housematefinder-app/src/styles.scss",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -122,6 +128,29 @@
       },
       "tags": [],
       "implicitDependencies": ["housematefinder-app"]
+    },
+    "ui": {
+      "projectType": "library",
+      "root": "libs/ui",
+      "sourceRoot": "libs/ui/src",
+      "prefix": "housematefinder",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui"],
+          "options": {
+            "jestConfig": "libs/ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/ui/src/**/*.ts", "libs/ui/src/**/*.html"]
+          }
+        }
+      },
+      "tags": []
     }
   }
 }

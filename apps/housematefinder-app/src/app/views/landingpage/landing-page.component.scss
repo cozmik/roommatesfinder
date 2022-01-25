@@ -1,0 +1,169 @@
+article{
+  @apply bg-background-gray;
+  .hero{
+    background: radial-gradient(transparent, rgba(0,0,0, .7)), url('../../../assets/images/bg.jpg');
+    @apply h-[65vh] bg-cover text-white pt-20 text-center;
+
+    h3 {
+      @apply text-xl font-semibold mt-4;
+      text-shadow: 1px 1px rgba(0,0,0, .5);
+      span {
+        @apply text-primary-green;
+      }
+    }
+
+    form{
+      @apply mt-4;
+      input, select{
+        @apply rounded-sm text-sm text-black/40;
+      }
+
+      button{
+        @apply rounded-sm text-white/60 text-xs bg-primary-green py-3;
+      }
+    }
+  }
+
+  .popular-cities-section{
+    h3{
+      @apply text-black/60 text-center pt-4 font-semibold;
+    }
+
+    .popular-cities{
+      @apply grid grid-cols-2 gap-3 p-4;
+
+      >div{
+        @apply text-white relative h-20 hover:bg-black/20;
+
+        img{
+          @apply absolute top-0 left-0 h-full w-full;
+        }
+
+        h4{
+          @apply mt-6;
+          text-shadow: 1px 1px rgba(0,0,0, .6);
+        }
+
+        h4, button{
+          @apply relative text-center;
+        }
+
+        button{
+          @apply hidden hover:block;
+        }
+      }
+    }
+  }
+
+  .info{
+    @apply text-center w-11/12 mx-auto pt-14 pb-10 text-black/60 font-semibold;
+    h3{
+      @apply pb-4;
+    }
+
+    p{
+      @apply max-w-[400px];
+    }
+
+    button{
+      @apply py-4;
+    }
+  }
+
+  .testimonials{
+    @apply bg-white h-[50vh] relative;
+    fa-icon{
+      @apply text-[#EB8F84] opacity-5 text-[5em] absolute top-2 left-4;
+    }
+
+    h3{
+      @apply text-black font-bold text-center text-lg pt-6;
+
+      span{
+        @apply text-black/30;
+      }
+    }
+
+    .story-card{
+      @apply text-center mt-8;
+
+      .profile-img{
+        @apply h-14 w-14 rounded-full overflow-hidden mx-auto;
+        img{
+          @apply h-full w-auto;
+        }
+      }
+
+      h4{
+        @apply font-bold text-base text-black/90;
+      }
+
+      .occupation{
+        @apply text-black/40 text-sm -mt-1 font-bold mb-4;
+      }
+
+      p{
+        @apply text-xs font-semibold px-8 text-black/60 max-w-[400px];
+      }
+    }
+  }
+
+  .app-download{
+    @apply bg-primary-yellow relative text-black py-10 text-center;
+
+    h3{
+      @apply font-semibold text-lg text-black/70 mb-4;
+    }
+
+    .info-text{
+      @apply text-xs text-black/40 font-semibold mx-10 max-w-[400px] mb-6;
+    }
+
+    .button-section{
+      @apply flex gap-4 justify-center;
+
+      fa-icon{
+        @apply text-xl inline-block px-2;
+      }
+
+      button{
+        @apply flex bg-[#000] text-white px-2;
+
+        div{
+          span{
+            @apply first:text-[.5em] block text-left;
+          }
+        }
+      }
+    }
+  }
+
+  .subscription{
+    @apply text-center py-10;
+
+    h3{
+      @apply font-semibold text-black/80 mb-2;
+    }
+
+    >div{
+      @apply text-xs font-semibold text-black/60 mb-6;
+    }
+
+    form{
+      @apply w-11/12 max-w-[400px] flex mx-auto justify-center;
+      label {
+        @apply w-full relative ;
+        fa-icon {
+          @apply absolute h-full flex items-center left-2 text-xs text-black/40;
+        }
+
+        input{
+          @apply pl-6 text-sm w-full p-1 rounded-l-sm;
+        }
+      }
+      button{
+        @apply bg-primary-green text-white w-5/12 text-xs rounded-r-none;
+      }
+    }
+  }
+}
